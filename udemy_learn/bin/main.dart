@@ -207,3 +207,102 @@ double paintneed(int wall1, int wall2, int wall3, int wall4, int ceiling) {
   return footage / 30;
 }
 */
+
+/*// !optional parameter
+void main(List<String> args) {
+  hello();
+  download('myfile.txt');
+  download('myfile.txt',true);
+}
+
+void hello([String name='']){
+  if(name.isNotEmpty) name =name.padLeft((name.length+1));
+  print('hello ${name}');
+}
+
+void download(String file, [bool open =false]){
+  print('downloading ${file}');
+  if(open) print('opening ${file}');
+}
+*/
+
+// !named parameter
+/*
+void main(List<String> args) {
+  //?must enter the variable
+  int footage = squart(lenght: 10, width: 10);
+  print(footage);
+  download('myfile');
+  download('myfile2', port: 90);
+}
+//?make it so need to type lenght and width to enter the value because used cruly bracket
+int squart({int? width, int? lenght}) {
+  return width! * lenght!;
+}
+
+void download(String file, {int port: 80}){
+  print('download ${file} on port ${port}');
+}
+*/
+
+// !object function
+/*
+void main(List<String> args) {
+  var dogyear = calyear;
+  var catyear = calyear;
+
+  print('your age in dog year is ${dogyear(age:43, multiple:7)}');
+  print('your age in dog year is ${catyear(age:43, multiple:12)}');
+
+}
+
+int calyear({int? age, int? multiple}){
+  return age! * multiple!;
+}
+*/
+
+//!anonymous function
+//todo: udemy one is broken so thank you geek for geek
+//? udemy one
+/*
+void main(List<String> args) {
+  () {
+    print('hello');
+  };
+  List<String> people = ['bryan', 'heather', 'chris'];
+  people.forEach(print);
+
+  print('---------');
+
+  for (var name in people) {
+    print(name);
+  }
+}
+*/
+  /*
+  //todo: thhis part started breaking
+  
+  people.where((String name){
+    switch (name) {
+      case 'chris':
+        return true;
+      case 'bryan':
+        return false;
+      case 'heather':
+        return true;
+    }
+  }).forEach(print);
+}
+*/
+
+//? geekforgeek one
+/*
+void main(List<String> args) {
+  var list = ["Shubham","Nick","Adil","Puthal"];
+  print('geekforgeek- anonymous fucton in dart');
+  for (var item in list) {
+    print('${list.indexOf(item)} : $item');
+  }
+}
+*/
+
