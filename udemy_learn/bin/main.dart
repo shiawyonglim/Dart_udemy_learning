@@ -279,7 +279,7 @@ void main(List<String> args) {
   }
 }
 */
-  /*
+/*
   //todo: thhis part started breaking
   
   people.where((String name){
@@ -306,3 +306,49 @@ void main(List<String> args) {
 }
 */
 
+//! exceptions
+//? exceptions is an error that can be handle but soem error cannot be handle
+//? vs code dont let me run the code so i cannot test the code myself
+// todo: this thing is a little buggy
+
+//?udemy
+/*
+void main(List<String> args) {
+  try{
+    int age = 8;
+    int year = 7;
+
+    print(age*year);
+  }
+  //?cannot run the NoSuchMethodError
+  on NoSuchMethodError{
+    print('sorry thats not going to happen');
+  }
+  catch (e){
+    print('there was an error: ${e.toString()}');
+  }
+  finally{
+    print('complete');
+  }
+}
+*/
+
+//! throwing exepection
+
+void main(List<String> args) {
+  try {
+    int age = 0;
+    int years = 7;
+
+    if (years != 7) throw Exception('dog must be 7');
+    if (age == null) throw NullThrownError();
+
+    print(age * years);
+  } on NullThrownError {
+    print('the value is null');
+  } catch (e) {
+    print('unknow error: ${e.toString()}');
+  } finally {
+    print('complete');
+  }
+}
