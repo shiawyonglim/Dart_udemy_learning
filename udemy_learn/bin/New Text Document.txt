@@ -1,0 +1,6 @@
+import 'package:udemy_learn/udemy_learn.dart' as udemy_learn;
+
+void main(List<String> arguments) {
+  print('Hello world: ${udemy_learn.calculate()}!');
+}
+
